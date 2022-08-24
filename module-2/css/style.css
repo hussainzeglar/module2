@@ -1,1 +1,96 @@
-
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  
+  body{
+    font-family: Tahoma, sans-serif;  
+  }
+  
+  .row{
+    width: 100%;
+    
+  }
+  
+  .menu-title{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .container{
+   position: relative;
+   top:60px;
+   margin: 15px; 
+  
+  }
+  
+  .item{
+    position: relative;
+    top: 0;
+    background-color:#999999;
+    margin: 15px;
+    padding: 25px;
+    border: 1px solid #000;
+  }
+  
+  .item p{
+    margin-top: 18px;
+    text-align: justify;
+    font-size: 100%;
+  }
+  
+  .item-title{
+    position: absolute;
+    top:0;
+    right: 0px;
+    background: green; 
+    padding: 6px 90px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+   
+  }
+  
+  #title-one {
+    background-color: #ef476f;
+  } 
+  
+  #title-two{
+    background-color: #ffd166;
+  }
+  
+  #title-three{
+    background-color: #06d6a0;
+  }
+  
+  
+  /*------ DESKTOP ------*/
+  @media (min-width: 992px){
+     .col-lg-4{
+      width: 33.33%;
+      float: left;  
+      
+    }
+  }
+  
+  
+  /*------ TABLET ------*/
+  @media (min-width: 768px) and (max-width: 991px){
+    .col-lg-4 {
+      width: 50%;
+      float: left;
+    }
+    .col-lg-tablet{
+     width: 100%;
+     float: left;
+   }
+  }
+  
+  
+  /*------ MOBILE ------*/
+  @media (max-width: 767px){
+    .col-lg-4{
+      width: 100%;
+      float: left;
+    }
+  }
